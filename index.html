@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3>Firebase Web login Example</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to your account</button>
+</div>
+
+<div id="user_div" class="loggedin-div">
+  <h3>Welcome User</h3>
+  <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAst3Y3ElEGU4hti6349L6np7EtnE5NO2A",
+    authDomain: "web-login-fa6e0.firebaseapp.com",
+    projectId: "web-login-fa6e0",
+    storageBucket: "web-login-fa6e0.appspot.com",
+    messagingSenderId: "705689393902",
+    appId: "1:705689393902:web:e1c63ddee6d969541bf1ff"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="index.js"></script>
+
+</body>
+</html>
